@@ -1,0 +1,5 @@
+.env
+deploy-everything.sh
+redeploy-lambda.sh
+node_modules/
+.idea/

@@ -1,0 +1,15 @@
+{
+  "name": "Lambda-Reupload-S3-to-Space",
+  "version": "1.0.0",
+  "description": "Lambda for re upload file from s3 to space digital ocean",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.472.0",
+    "mysql": "^2.17.1"
+  }
+}
