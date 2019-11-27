@@ -150,7 +150,11 @@ async function uploadFileToSpace(bucket, key, streamData) {
  * @returns {string}
  */
 function getFullPatchFileSpace(region, bucket, key) {
-    return 'https://' + bucket + '.' + region + '.digitaloceanspaces.com/' + key;
+    if (process.env.SPACE_CDN_ENABLE === '1') {
+        return process.env.SPACE_CDN_URL + '/' + key;
+    } else {
+        return 'https://' + bucket + '.' + region + '.digitaloceanspaces.com/' + key;
+    }
 }
 
 /**
